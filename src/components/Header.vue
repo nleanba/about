@@ -4,7 +4,9 @@
       <img alt="nleanba logo" src="../assets/logo.png">
     </div>
     <div class="right">
-      nleanba
+      <svg viewBox="0 0 64.38 19">
+        <text x="0" y="15">nleanba</text>
+      </svg>
     </div>
   </header>
 </template>
@@ -22,10 +24,11 @@ export default class HeaderBar extends Vue {}
 header {
   height: 16rem;
   display: flex;
+  max-width: 100%;
 }
 
 .left {
-  flex: 0 0.5 16rem;
+  flex: 0 1 16rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,9 +42,14 @@ header {
 .right {
   background-color: vars.$c_10;
   flex: 1;
-  line-height: 8rem;
-  padding: 4rem;
-  font-size: 6rem;
+  // line-height: 8rem;
+  padding: min(4rem, 5vw);
   font-weight: 800;
+
+  svg {
+    min-width: 50vw;
+    width: 100%;
+    height: calc(16rem - 2 * min(4rem, 5vw));
+  }
 }
 </style>
