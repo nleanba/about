@@ -4,7 +4,6 @@
     <p>
       Coming soon
     </p>
-    <img alt="placeholder" src="../assets/logo.png">
   </section>
 </main>
 </template>

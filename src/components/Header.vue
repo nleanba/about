@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="left">
-      <img alt="nleanba logo" src="../assets/logo.png">
+      <img alt="nleanba logo" src="../assets/logo.svg">
     </div>
     <div class="right">
       <svg viewBox="0 0 64.38 19">
